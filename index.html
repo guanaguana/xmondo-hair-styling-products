@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>  <!-- This wraps around everything, in vscode you can type "!" and then press spacebar or tab idr but it'll generate the basic structure -->
+
+<head>  <!-- Head (usually) contains all the document information and links -->
+    <link rel="stylesheet" href="main.css">  <!-- Use this for styles, writing them manually in the html file if you have a css file just makes you look dumb -->
+    <title>  <!-- This is what shows up on the browser card -->
+        PDP
+    </title>
+</head>
+
+<body>  <!-- Body contains the rest -->
+    <!-- This is a div containing a logo which is a clickable link, and title text -->
+    <div class="title"> <!-- This is where an id would fit more, see line 36 -->
+        <a href="https://le.ac.uk/">
+            <img id="logo" src="uni-of-leicester-2.png" alt="University of Leicester" width="300" height="100">
+        </a>
+
+        <h1 id="title_text">Oliver Johnson PDP</h1>
+    </div>
+    <!-- This is a div containing a table which displays my information, such as my student id-->
+    <div id="info_row">
+        <table id="info_row_table">  <!-- Sane people would play with a flex unordered list but this is fine ig -->
+            <tr id="info_row_tr">
+                <td style="color:rgb(50, 67, 115); font-weight:bold;" id="info_row_td">Student Name:</td>
+                <td id="info_row_td">Oliver Johnson</td>
+            </tr>
+            <tr id="info_row_tr">
+                <td style="color:rgb(50, 67, 115); font-weight:bold;" id="info_row_td">User ID:</td>
+                <td id="info_row_td">229063122</td>
+            </tr>
+            <tr id="info_row_tr">
+                <td style="color:rgb(50, 67, 115); font-weight:bold;" id="info_row_td">Period Covered:</td>
+                <td id="info_row_td">2 semesters (Sep 2022 - May/June 2023)</td>
+            </tr>
+            <tr id="info_row_tr"> <!-- ids are for single elements only, what you are looking for is a class -->
+                <td style="color:rgb(50, 67, 115); font-weight:bold;" id="info_row_td">Appraiser:</td>
+                <td id="info_row_td"></td>
+            </tr>
+            <table>
+    </div>
+    <!--This is a div containing the main table of the PDP-->
+    <div>
+        <table id="main_table" id="table">  <!-- Double id lol, not valid -->
+            <tr id="titlerow">
+                <td>Objective/Task/Activity </td>  <!-- Use <th> for table headings -->
+                <td>How would you accomplish this? </td>
+                <td>Mid-year progress </td>
+                <td>Year-end outcome </td>
+            </tr>
+            <tr>
+                <td>Academic achievement </td>
+                <td> Handing in assignments on time<br>
+                    <br>
+                    Revising material before tests <br>
+                    <br>
+                    Going back over lecture notes to make sure I understood material
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Organizational and study skills </td>
+                <td> Using Glean to take lecture notes <br>(a note taking application), this makes my notes easier to
+                    keep track of<br>
+                    <br>
+                    Writing out notes<br>
+                    <br>
+                    Making sure I understand material by answering questions relating to the topic
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Leadership skills </td>
+                <td> Taking a leading role in group projects if necessary</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Teamwork</td>
+                <td> Being able to compromise in group projects if necessary<br>
+                    <br>
+                    Responding to group members as soon as possible about the assignment<br>
+                    <br>
+                    Doing my part of the work on time
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Presentation and communication skills</td>
+                <td> Practicing my presentation skills before presentations</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <!--This is a div containing the button which is used to reveal and hide the table containing the appraisers comments-->
+    <div class="button" id="button">  <!-- Honestly a useless div cuz it just has 1 element but some people might like it so keep it in just in case -->
+        <button id='btn'>Click for Appraiser/Personal tutor comments</button>
+
+    </div>
+    <!--This is a div containing a table with the appraisers comments. It is empty as I do not have any comments from my appraiser as of yet.
+            It is hidden until the button is pressed, using the function reveal() in main.js-->
+    <div id="appraiser_table">
+        <table style=border:1px>  <!-- Not border= but border: cuz css -->
+            <tr>
+                <td>Mid-year Progress</td>
+                <td>______________</td>  <!-- Just leave blank -->
+            </tr>
+            <tr>
+                <td>Year-end Outcome </td>
+                <td>______________</td>
+            </tr>
+        </table>
+    </div>
+    <!--This is a div containing the footer-->
+    <div class="footer">
+        <h5 id=footerheading>Oliver Johnson PDP</h5>  <!-- Honestly just go h2 since you can style it and there is only the h1 with no other headings -->
+
+    </div>
+    <!--This is the script tag which calls the script from main.js, I had runtime issues until I called it at the bottom of the body-->
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,49 +1,51 @@
-h1{
+/* not much to say here, you can play around on sites like https://cssbattle.dev/ if you wanna practice */
+
+h1 {
     text-align: center;
 
 }
 
-#appraiser_table{
+#appraiser_table {
     display: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.title{
+.title {
     background-color: rgb(50, 67, 115);
     height: 120px;
     display: inline-flex;
     width: 100%;
 }
 
-#logo{
-    margin: 10px; 
+#logo {
+    margin: 10px;
 }
 
-#title_text{
+#title_text {
     color: whitesmoke;
-    text-shadow:  2px 2px 8px #393535 ;
+    text-shadow: 2px 2px 8px #393535;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px; 
+    margin: 10px;
     margin-left: 23%;
 }
 
 
-#main_table{
+#main_table {
     border-color: rgb(175, 173, 173);
     border-collapse: collapse;
     width: 100%;
     border: 1px solid #dddddd;
     margin-right: 20%;
     margin-bottom: 1%;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 5%;
 
 }
 
 
 
-#titlerow{
+#titlerow {
     font-size: 20px;
     font-weight: bold;
     border: 1px;
@@ -56,36 +58,36 @@ h1{
 td {
 
     border: 2px solid rgb(50, 67, 115);
-  
+
     text-align: left;
-  
+
     padding: 8px;
     border-radius: 5px;
-  
-  }
-
-
-  
-
-tr:nth-child(even) {
-
-  background-color: #dddddd;
-
-  
 
 }
 
-#info_row_table{
+
+
+
+tr:nth-child(even) {
+
+    background-color: #dddddd;
+
+
+
+}
+
+#info_row_table {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-#info_row_tr{
+#info_row_tr {
     border: 0px;
     background-color: white;
 }
 
-#info_row_td{
+#info_row_td {
     border: 0px;
     background-color: white;
 }
@@ -102,9 +104,9 @@ tr:nth-child(even) {
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
-#footerheading{
+#footerheading {
     padding: 2px 2px 2px 2px;
     margin: 0px 0px 0px 0px;
 }
