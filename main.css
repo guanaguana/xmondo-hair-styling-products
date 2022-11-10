@@ -1,12 +1,24 @@
 /* not much to say here, you can play around on sites like https://cssbattle.dev/ if you wanna practice */
 
+/* 
+- you can add this to get rid of that white space around your page
+- beacuse body has some default margin setting it to 0 will fix it
+- star means every element on page, so you will reseting every element, very useful, then you can set padding or margin that you want
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*/
+
 h1 {
     text-align: center;
 
 }
-
 #appraiser_table {
     display: none;
+    /* Ussualy we provide default font in body element and then we change font (if we want) in other elements, when use set default font in body */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -35,11 +47,11 @@ h1 {
     border-color: rgb(175, 173, 173);
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid #dddddd;
+    border: 1px solid #d30584;
     margin-right: 20%;
     margin-bottom: 1%;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5%;
+    border-radius: 50%;
 
 }
 
@@ -48,6 +60,7 @@ h1 {
 #titlerow {
     font-size: 20px;
     font-weight: bold;
+    /*why do you have two borders here, second border overrides the first one, useless*/
     border: 1px;
     border: 1px solid #dddddd;
     color: rgb(50, 67, 115);
@@ -68,7 +81,7 @@ td {
 
 
 
-
+/* good usage of nth-child */
 tr:nth-child(even) {
 
     background-color: #dddddd;
@@ -93,7 +106,7 @@ tr:nth-child(even) {
 }
 
 
-
+/*dont know why is footer fixed, fixed means that it is visible everywhere on the page, it is fixed to the bottom of the viewport, is this really what you want?*/
 .footer {
     position: fixed;
     left: 0;

@@ -4,14 +4,14 @@
 
 <head>  <!-- Head (usually) contains all the document information and links -->
     <link rel="stylesheet" href="main.css">  <!-- Use this for styles, writing them manually in the html file if you have a css file just makes you look dumb -->
-    <title>  <!-- This is what shows up on the browser card -->
+    <title>  
         PDP
-    </title>
+    </title> <!-- This is what shows up on the browser card -->
 </head>
 
 <body>  <!-- Body contains the rest -->
     <!-- This is a div containing a logo which is a clickable link, and title text -->
-    <div class="title"> <!-- This is where an id would fit more, see line 36 -->
+    <div class="title"> <!-- This is where an id would fit more, see line 36 --> <!-- here you can use <header> tag instead of div with class, it will be more readable and you will provide more inforamtion to the browser same with the footer, better use tag <footer> => better readability and you dont need to use classes, you can just select footer/header in css, html offers many more tags such as: <main>, <section>, <article>, <nav>-->
         <a href="https://le.ac.uk/">
             <img id="logo" src="uni-of-leicester-2.png" alt="University of Leicester" width="300" height="100">
         </a>
@@ -41,18 +41,32 @@
     </div>
     <!--This is a div containing the main table of the PDP-->
     <div>
+        <!-- Table should contain table header and table body-->
         <table id="main_table" id="table">  <!-- Double id lol, not valid -->
+            <!-- Here you have id titlerow -->
             <tr id="titlerow">
                 <td>Objective/Task/Activity </td>  <!-- Use <th> for table headings -->
                 <td>How would you accomplish this? </td>
                 <td>Mid-year progress </td>
                 <td>Year-end outcome </td>
             </tr>
+            <!--
+                <thead> -> the head of the table
+                    <tr> -> row in the table
+                        <th>...</th> -> table header element (Objective/Task/Activity etc.)
+                    </tr>
+                </thead>
+                <tbody> -> the body of the table
+                    <tr>
+                        <td></td> -> table data element
+                    </tr>
+                </tbody>
+            -->
             <tr>
                 <td>Academic achievement </td>
-                <td> Handing in assignments on time<br>
+                <td> Handing in assignments on time<br> <!--I wouldn't recommend using <br> tag, instead wrap everything that should be on new line in <div> element and then style it in css, if you want to put space between them use margin or padding -->
                     <br>
-                    Revising material before tests <br>
+                    <!--<div>=> margin-bottom to make space below -->Revising material before tests<!--</div> etc.--> <br>
                     <br>
                     Going back over lecture notes to make sure I understood material
                 </td>
