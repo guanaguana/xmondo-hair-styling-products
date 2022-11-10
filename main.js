@@ -28,4 +28,4 @@ function reveal() {
     } //ye this is fine
 }
 
-// semicolons ; are optional btw, see your line 3. You'll have to use them for any "inline" code but ye
+// semicolons ; are optional btw, see your line 12. You'll have to use them for any "inline" code but ye
